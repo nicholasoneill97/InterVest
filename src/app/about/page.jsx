@@ -154,9 +154,11 @@ export default function AboutSection() {
             >
               ↓ Read More
             </a>
-            <button className="p-3 bg-blue-700 rounded-lg w-full sm:w-[40%]">
+            <a
+              href="/search"
+              className="p-3 bg-blue-700 rounded-lg w-full sm:w-[40%]">
               Search Deals
-            </button>
+            </a>
           </div>
         </div>
       </section>
