@@ -134,7 +134,7 @@ export const SearchPage = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="m-auto mb-6 z-20 w-full p-4 bg-gradient-to-r from-white to-black/5 border border-gray-400 shadow-2xl backdrop-blur-xl rounded-md flex flex-col justify-center items-center gap-4"
+        className="m-auto mb-6 z-20 w-full p-4 bg-white border border-gray-400 shadow-2xl backdrop-blur-xl rounded-md flex flex-col justify-center items-center gap-4"
       >
         <div className="flex w-full justify-center items-center gap-4 flex-wrap">
           {/* Search Input */}
@@ -396,6 +396,7 @@ export const SearchPage = () => {
 };
 
 export default SearchPage;
+
 
 
 
