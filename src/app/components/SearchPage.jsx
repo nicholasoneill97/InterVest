@@ -148,7 +148,7 @@ export const SearchPage = () => {
               placeholder="Try 'Italy', 'beach', or 'mountain'"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="h-8 w-full px-2 border border-gray-800 bg-white rounded-md shadow-sm focus:outline-none focus:ring-2  focus:ring-blue-500 text-xs"
+              className="h-8 text-black w-full px-2 border border-gray-800 bg-white rounded-md shadow-sm focus:outline-none focus:ring-2  focus:ring-blue-500 text-xs"
             />
           </div>
 
@@ -161,7 +161,7 @@ export const SearchPage = () => {
             <select
               value={duration}
               onChange={(e) => setDuration(e.target.value)}
-              className="h-8 px-2 border border-gray-800 bg-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="h-8 px-2 text-black border border-gray-800 bg-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <option value="">Any length</option>
               <option value="1-3">1-3 Days</option>
@@ -179,7 +179,7 @@ export const SearchPage = () => {
             <select
               value={travelers}
               onChange={(e) => setTravelers(e.target.value)}
-              className="h-8 px-2 border border-gray-800 bg-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="h-8 px-2 text-black border border-gray-800 bg-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <option value="">1 or More</option>
               <option value="1">1 Person</option>
@@ -198,7 +198,7 @@ export const SearchPage = () => {
             <select
               value={price}
               onChange={(e) => setPrice(e.target.value)}
-              className="h-8 px-2 border border-gray-800 bg-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="h-8 px-2 border text-black border-gray-800 bg-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <option value="">Any Price</option>
               <option value="low">Under $500</option>
@@ -216,7 +216,7 @@ export const SearchPage = () => {
             <select
               value={deal}
               onChange={(e) => setDeal(e.target.value)}
-              className="h-8 px-2 border border-gray-800 bg-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="h-8 px-2 border text-black border-gray-800 bg-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <option value="">None Selected</option>
               <option value="family">Family Package</option>
@@ -343,8 +343,8 @@ export const SearchPage = () => {
                           Total: {pricing.total}
                         </p>
                       </div>
-                      <div className="text-md hover:underline cursor-pointer">
-                        <Link key={trip.id} href={`/trips/${trip.id}`} passHref>
+                      <div className="text-md text-black hover:underline cursor-pointer">
+                        <Link key={trip.id} href={`/trips/${trip.id}`} passHref className='text-black'>
                           View Offer
                         </Link>
                       </div>
@@ -396,6 +396,7 @@ export const SearchPage = () => {
 };
 
 export default SearchPage;
+
 
 
 
