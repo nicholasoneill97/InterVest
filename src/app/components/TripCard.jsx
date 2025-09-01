@@ -43,7 +43,7 @@ const TripCard = ({ trip, people, onBook }) => {
       </div>
 
       <div className="p-4 flex flex-col flex-grow">
-        <h3 className="text-xl font-bold">{trip.title}</h3>
+        <h3 className="text-xl font-bold text-black">{trip.title}</h3>
         <p className="text-gray-600 text-sm line-clamp-3">{trip.description}</p>
         <p className="text-sm text-gray-500">
           Duration: <span className="font-semibold">{durationDays} days</span>
@@ -81,3 +81,4 @@ const TripCard = ({ trip, people, onBook }) => {
 };
 
 export default TripCard;
+
