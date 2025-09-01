@@ -12,7 +12,7 @@ import "../styles/scroll.css";
 
 export default function TripCards() {
   return (
-    <section className="py-12 px-6 max-w-[100%] bg-gradient-to-r from-white to-black/10">
+    <section className="py-12 px-6 max-w-[100%] bg-white">
       <motion.h3
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
