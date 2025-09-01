@@ -47,7 +47,7 @@ export default function AboutSection() {
   const [showTerms3, setShowTerms3] = useState(false);
 
   return (
-    <div className="w-full mx-auto p-0">
+    <div className="w-full mx-auto p-0 bg-white">
       <NavBar />
       <div className="text-3xl sm:text-4xl md:text-5xl mt-10 md:mt-18 font-bold mb-8 text-center text-blue-900 w-full px-2">
         About <span className="text-blue-600">Inter</span>Vest
@@ -63,7 +63,7 @@ export default function AboutSection() {
           >
             <button
               onClick={() => toggle(index)}
-              className="w-full flex justify-between items-center px-4 sm:px-6 py-4 bg-white/70 backdrop-blur-md hover:bg-white/90 transition-colors duration-300"
+              className="w-full flex justify-between items-center px-4 sm:px-6 py-4 bg-white backdrop-blur-md hover:bg-white/90 transition-colors duration-300"
             >
               <span className="text-lg sm:text-xl font-semibold mx-auto text-blue-900">
                 {item.title}
@@ -126,7 +126,7 @@ export default function AboutSection() {
       </div>
 
       {/* ===================== FEATURES INTRO ===================== */}
-      <section className="relative w-full px-6 sm:px-20 md:px-40 py-20 sm:py-30 md:py-40 bg-gradient-to-b from-white via-blue-200 to-blue-100 text-center overflow-hidden">
+      <section className="relative w-full px-6 sm:px-20 md:px-40 py-20 sm:py-30 md:py-40 bg-white text-center overflow-hidden">
         <div className="max-w-3xl mx-auto px-2 sm:px-6">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-900 mb-6">
             Discover Our <span className="text-blue-600">Exclusive Features</span>
