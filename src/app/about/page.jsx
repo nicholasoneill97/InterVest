@@ -49,7 +49,7 @@ export default function AboutSection() {
   return (
     <div className="w-full mx-auto p-0 bg-white">
       <NavBar />
-      <div className="text-3xl sm:text-4xl md:text-5xl mt-10 md:mt-18 font-bold mb-8 text-center text-blue-900 w-full px-2">
+      <div className="text-3xl sm:text-4xl md:text-5xl pt-12 md:pt-20 font-bold mb-8 text-center text-blue-900 w-full px-2">
         About <span className="text-blue-600">Inter</span>Vest
       </div>
 
