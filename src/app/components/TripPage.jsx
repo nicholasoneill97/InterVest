@@ -82,7 +82,7 @@ export default function TripPage({ trip }) {
   return (
     <section className="flex min-h-screen flex-col bg-black text-white overflow-x-hidden">
       {/* Navigation */}
-      <div className="absolute top-4 left-4 z-30 flex gap-6 text-sm sm:text-base">
+      <div className="absolute top-4 left-4 z-20 flex gap-6 text-sm sm:text-base">
         <Link href="/search" className="text-white hover:underline">
           ← Back To Search
         </Link>
@@ -113,7 +113,7 @@ export default function TripPage({ trip }) {
       )}
 
       {/* Top Hero Section with Background */}
-      <div className="relative h-[50vh] w-full">
+      <div className="relative h-[50vh] w-full z-10">
         <Image
           src={trip.image}
           alt={trip.title}
