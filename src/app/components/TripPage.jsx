@@ -92,7 +92,7 @@ export default function TripPage({ trip }) {
       </div>
       {/* Deal Tags */}
       {trip.groupDiscounts && (
-        <div className=" z-60 absolute right-0 top-4 bg-gradient-to-br from-blue-200 to-blue-300 text-xs sm:text-sm text-black px-3 py-1 h-auto rounded-bl-lg rounded-tl-lg shadow border border-blue-600 flex items-center gap-1">
+        <div className=" z-20 absolute right-0 top-4 bg-gradient-to-br from-blue-200 to-blue-300 text-xs sm:text-sm text-black px-3 py-1 h-auto rounded-bl-lg rounded-tl-lg shadow border border-blue-600 flex items-center gap-1">
           <MdGroups className="text-base" />
           Group Discounts
         </div>
@@ -106,7 +106,7 @@ export default function TripPage({ trip }) {
       )}
 
       {trip.familyPackage && (
-        <div className=" z-40 absolute right-0 top-4 bg-gradient-to-br from-blue-200 to-blue-300 text-xs sm:text-sm text-black px-3 py-1 h-auto rounded-bl-lg rounded-tl-lg shadow border border-blue-600 flex items-center gap-1">
+        <div className=" z-20 absolute right-0 top-4 bg-gradient-to-br from-blue-200 to-blue-300 text-xs sm:text-sm text-black px-3 py-1 h-auto rounded-bl-lg rounded-tl-lg shadow border border-blue-600 flex items-center gap-1">
           <MdFamilyRestroom className="text-base" />
           Family
         </div>
