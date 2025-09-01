@@ -324,7 +324,7 @@ export default function Home() {
             title: "Bundle & Save",
             description:
               "Book flights and hotels together and unlock exclusive discounts for your family.",
-            image: "/ship-8308680_1280.jpg",
+            image: "/island-2722471_1280.jpg",
             link: "/about#bundle-save",
           },
           {
