@@ -362,7 +362,7 @@ export const SearchPage = () => {
             );
           })
         ) : (
-          <p className="col-span-full text-center text-gray-500">
+          <p className="col-span-full text-center text-gray-500 h-screen bg-white">
             No trips found matching your filters.
           </p>
         )}
@@ -396,6 +396,7 @@ export const SearchPage = () => {
 };
 
 export default SearchPage;
+
 
 
 
