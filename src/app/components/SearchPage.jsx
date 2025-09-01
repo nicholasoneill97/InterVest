@@ -125,7 +125,7 @@ export const SearchPage = () => {
   });
 
   return (
-    <div className="p-6 w-full">
+    <div className="p-6 w-full bg-white">
       <NavBar />
 
       {/*  Filters + Search  */}
@@ -134,7 +134,7 @@ export const SearchPage = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="m-auto mb-6 z-20 w-full p-4 bg-white border border-gray-800 shadow-2xl backdrop-blur-xl rounded-md flex flex-col justify-center items-center gap-4"
+        className="m-auto mb-6 z-20 w-full p-4 bg-white border border-gray-800 shadow-2xl rounded-md flex flex-col justify-center items-center gap-4"
       >
         <div className="flex w-full justify-center items-center gap-4 flex-wrap">
           {/* Search Input */}
@@ -306,7 +306,7 @@ export const SearchPage = () => {
                 </div>
 
                 <div className="p-4 flex flex-col flex-grow">
-                  <h3 className="text-xl font-bold">{trip.title}</h3>
+                  <h3 className="text-xl font-bold text-black">{trip.title}</h3>
 
                   {/* Clamp description so cards stay even */}
                   <p className="text-gray-600 text-sm line-clamp-3">
@@ -396,6 +396,7 @@ export const SearchPage = () => {
 };
 
 export default SearchPage;
+
 
 
 
