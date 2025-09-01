@@ -126,7 +126,7 @@ export default function AboutSection() {
       </div>
 
       {/* ===================== FEATURES INTRO ===================== */}
-      <section className="relative w-full px-6 sm:px-20 md:px-40 py-20 sm:py-30 md:py-40 bg-white text-center overflow-hidden">
+      <section className="relative w-full px-6 sm:px-20 md:px-40 py-20 sm:py-30 md:py-40 bg-gradient-to-b from-white to-blue-200 text-center overflow-hidden">
         <div className="max-w-3xl mx-auto px-2 sm:px-6">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-900 mb-6">
             Discover Our <span className="text-blue-600">Exclusive Features</span>
