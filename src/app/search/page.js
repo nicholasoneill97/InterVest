@@ -1,10 +1,11 @@
-import React, { Suspense } from "react";
-import SearchPage from "../components/SearchPage"; // move your existing SearchPage here
+// app/search/page.jsx or wherever your page is
+import ClientOnly from "../components/ClientOnly";
+import SearchPage from "../components/SearchPage"; // your existing component
 
-export default function page() {
+export default function Page() {
   return (
-    <Suspense fallback={<p className="text-center mt-10">Loading trips...</p>}>
+    <ClientOnly>
       <SearchPage />
-    </Suspense>
+    </ClientOnly>
   );
 }
