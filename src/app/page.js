@@ -311,7 +311,7 @@ export default function Home() {
       </div>
 
       {/* Promo Cards Section */}
-      <section className="w-full py-16 bg-[#ddd] flex flex-wrap justify-center gap-6 sm:gap-10">
+      <section className="w-full py-16 bg-white flex flex-wrap justify-center gap-6 sm:gap-10">
         {[
           {
             title: "Family Packages",
