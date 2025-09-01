@@ -1,0 +1,7 @@
+
+
+/* Webkit browsers */
+.custom-scrollbar::-webkit-scrollbar {
+  height: 0px;
+  display:none
+}
