@@ -111,7 +111,7 @@ export default function Home() {
                 maxlength="30"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                className="h-10 w-full lg:w-[250px] px-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="h-10 w-full lg:w-[250px] px-4 text-black border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
 
@@ -124,7 +124,7 @@ export default function Home() {
               <select
                 value={duration}
                 onChange={(e) => setDuration(e.target.value)}
-                className="h-10 px-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="h-10 px-4 text-black border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 <option value="">Any length</option>
                 <option value="1-3">1-3 Days</option>
@@ -142,7 +142,7 @@ export default function Home() {
               <select
                 value={travelers}
                 onChange={(e) => setTravelers(e.target.value)}
-                className="h-10 px-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="h-10 px-4 text-black border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 <option value="">1 or More</option>
                 <option value="1">1 Person</option>
@@ -161,7 +161,7 @@ export default function Home() {
               <select
                 value={price}
                 onChange={(e) => setPrice(e.target.value)}
-                className="h-10 px-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="h-10 px-4 border text-black border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 <option value="">Any Price</option>
                 <option value="low">Under $500</option>
@@ -187,7 +187,7 @@ export default function Home() {
                   if (value === "family") setFamilyPackage(true);
                   if (value === "discount") setGroupDiscount(true);
                 }}
-                className="h-10 px-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="h-10 px-4 text-black border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 <option value="">Any Deal</option>
                 <option value="family">Family Package</option>
