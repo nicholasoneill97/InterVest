@@ -134,12 +134,12 @@ export const SearchPage = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="m-auto mb-6 z-20 w-full p-4 bg-white border border-gray-400 shadow-2xl backdrop-blur-xl rounded-md flex flex-col justify-center items-center gap-4"
+        className="m-auto mb-6 z-20 w-full p-4 bg-white border border-gray-800 shadow-2xl backdrop-blur-xl rounded-md flex flex-col justify-center items-center gap-4"
       >
         <div className="flex w-full justify-center items-center gap-4 flex-wrap">
           {/* Search Input */}
           <div className="flex flex-col flex-[2]">
-            <label className="mb-1 text-sm w-full font-medium text-gray-700 flex items-center gap-2">
+            <label className="mb-1 text-sm w-full font-medium text-gray-800 flex items-center gap-2">
               <FaGlobe className="text-blue-500" />
               By Keyword
             </label>
@@ -148,20 +148,20 @@ export const SearchPage = () => {
               placeholder="Try 'Italy', 'beach', or 'mountain'"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="h-8 w-full px-2 border border-gray-500 bg-white rounded-md shadow-sm focus:outline-none focus:ring-2  focus:ring-blue-500 text-xs"
+              className="h-8 w-full px-2 border border-gray-800 bg-white rounded-md shadow-sm focus:outline-none focus:ring-2  focus:ring-blue-500 text-xs"
             />
           </div>
 
           {/* Duration */}
           <div className="flex flex-col flex-1">
-            <label className="mb-1 text-sm font-medium text-gray-700 flex items-center gap-2">
+            <label className="mb-1 text-sm font-medium text-gray-800 flex items-center gap-2">
               <FaCalendarAlt className="text-blue-500" />
               Duration
             </label>
             <select
               value={duration}
               onChange={(e) => setDuration(e.target.value)}
-              className="h-8 px-2 border border-gray-500 bg-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="h-8 px-2 border border-gray-800 bg-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <option value="">Any length</option>
               <option value="1-3">1-3 Days</option>
@@ -172,14 +172,14 @@ export const SearchPage = () => {
 
           {/* Travelers */}
           <div className="flex flex-col flex-1">
-            <label className="mb-1 text-sm font-medium text-gray-700 flex items-center gap-2">
+            <label className="mb-1 text-sm font-medium text-gray-800 flex items-center gap-2">
               <FaUserFriends className="text-blue-500" />
               Travelers
             </label>
             <select
               value={travelers}
               onChange={(e) => setTravelers(e.target.value)}
-              className="h-8 px-2 border border-gray-500 bg-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="h-8 px-2 border border-gray-800 bg-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <option value="">1 or More</option>
               <option value="1">1 Person</option>
@@ -198,7 +198,7 @@ export const SearchPage = () => {
             <select
               value={price}
               onChange={(e) => setPrice(e.target.value)}
-              className="h-8 px-2 border border-gray-500 bg-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="h-8 px-2 border border-gray-800 bg-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <option value="">Any Price</option>
               <option value="low">Under $500</option>
@@ -209,14 +209,14 @@ export const SearchPage = () => {
 
           {/* Deals */}
           <div className="flex flex-col flex-1">
-            <label className="mb-1 text-sm font-medium text-gray-700 flex items-center gap-2">
+            <label className="mb-1 text-sm font-medium text-gray-800 flex items-center gap-2">
               <FaTags className="text-blue-500" />
               Deals
             </label>
             <select
               value={deal}
               onChange={(e) => setDeal(e.target.value)}
-              className="h-8 px-2 border border-gray-500 bg-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="h-8 px-2 border border-gray-800 bg-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <option value="">None Selected</option>
               <option value="family">Family Package</option>
@@ -396,6 +396,7 @@ export const SearchPage = () => {
 };
 
 export default SearchPage;
+
 
 
 
