@@ -96,7 +96,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.2, duration: 1 }}
-          className="z-20 w-[95%] sm:max-w-[90%] p-6 sm:p-8 bg-white backdrop-blur-xl shadow-2xl rounded-2xl flex flex-col gap-4 overflow-auto"
+          className="z-20 w-[95%] sm:max-w-[90%] p-6 sm:p-8 bg-white shadow-2xl rounded-2xl flex flex-col gap-4 overflow-auto"
         >
           <div className="flex flex-col lg:flex-row w-full items-stretch lg:items-end gap-4 flex-wrap min-[0px]:max-[550px]:flex-row">
             {/* Search Input */}
@@ -212,7 +212,7 @@ export default function Home() {
       </section>
 
       {/* Feature Cards */}
-      <section className="w-full bg-gradient-to-r from-white to-black/10 py-10 flex flex-wrap justify-center gap-6 sm:gap-10">
+      <section className="w-full bg-white py-10 flex flex-wrap justify-center gap-6 sm:gap-10">
         {[
           {
             icon: FaUmbrellaBeach,
