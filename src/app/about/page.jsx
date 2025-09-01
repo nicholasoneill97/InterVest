@@ -59,7 +59,7 @@ export default function AboutSection() {
         return (
           <div
             key={index}
-            className="mb-4 rounded-2xl border border-blue-100 shadow-lg overflow-hidden transition-all duration-500 bg-gradient-to-br from-blue-200 via-blue-75 to-blue-100 w-[95%] sm:w-[80%] mx-auto"
+            className="mb-4 rounded-2xl border border-blue-100 shadow-lg overflow-hidden transition-all duration-500 bg-white w-[95%] sm:w-[80%] mx-auto"
           >
             <button
               onClick={() => toggle(index)}
@@ -164,7 +164,7 @@ export default function AboutSection() {
       {/* ===================== FAMILY PACKAGES / BUNDLE / GROUP ===================== */}
       <section
         id="family-packages"
-        className="mb-12 rounded-xl h-screen sm:h-screen bg-black/2 flex flex-col gap-4  [@media(min-height:1000px)]:h-[60vh]"
+        className="mb-12 rounded-xl h-screen sm:h-screen bg-white flex flex-col gap-4  [@media(min-height:1000px)]:h-[60vh]"
       >
         <div className="relative w-full mx-auto h-[200px] sm:h-[300px] overflow-hidden shadow-lg">
           <Image
@@ -249,7 +249,7 @@ export default function AboutSection() {
       {/* Bundle & Save */}
       <section
         id="bundle-save"
-        className="mb-12 rounded-xl h-screen sm:h-screen bg-black/2 flex flex-col gap-4 [@media(min-height:1000px)]:h-[60vh]"
+        className="mb-12 rounded-xl h-screen sm:h-screen bg-white flex flex-col gap-4 [@media(min-height:1000px)]:h-[60vh]"
       >
         <div className="relative w-full mx-auto h-[200px] sm:h-[300px] overflow-hidden shadow-lg">
           <Image
@@ -338,7 +338,7 @@ export default function AboutSection() {
       {/* Group Discounts */}
       <section
         id="group-discounts"
-        className="mb-12 rounded-xl h-screen sm:h-screen bg-black/2 flex flex-col gap-4 [@media(min-height:1000px)]:h-[60vh]"
+        className="mb-12 rounded-xl h-screen sm:h-screen bg-white flex flex-col gap-4 [@media(min-height:1000px)]:h-[60vh]"
       >
         <div className="relative w-full mx-auto h-[200px] sm:h-[300px] overflow-hidden shadow-lg">
           <Image
