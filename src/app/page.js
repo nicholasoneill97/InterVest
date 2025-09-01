@@ -96,7 +96,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.2, duration: 1 }}
-          className="z-20 w-[95%] sm:max-w-[90%] p-6 sm:p-8 bg-gradient-to-r from-white to-white backdrop-blur-xl shadow-2xl rounded-2xl flex flex-col gap-4 overflow-auto"
+          className="z-20 w-[95%] sm:max-w-[90%] p-6 sm:p-8 bg-white backdrop-blur-xl shadow-2xl rounded-2xl flex flex-col gap-4 overflow-auto"
         >
           <div className="flex flex-col lg:flex-row w-full items-stretch lg:items-end gap-4 flex-wrap min-[0px]:max-[550px]:flex-row">
             {/* Search Input */}
@@ -311,7 +311,7 @@ export default function Home() {
       </div>
 
       {/* Promo Cards Section */}
-      <section className="w-full py-16 bg-gradient-to-r from-white to-black/10 flex flex-wrap justify-center gap-6 sm:gap-10">
+      <section className="w-full py-16 bg-[#ddd] flex flex-wrap justify-center gap-6 sm:gap-10">
         {[
           {
             title: "Family Packages",
@@ -341,7 +341,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6, delay: i * 0.2 }}
-            className="w-[90%] sm:w-[70%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-white to-gray-100 border border-gray-200 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition flex flex-col sm:flex-row"
+            className="w-[90%] sm:w-[70%] md:w-[45%] lg:w-[30%] bg-[#ddd] border border-gray-200 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition flex flex-col sm:flex-row"
           >
             <div className="relative h-48 sm:h-auto sm:w-1/2">
               <Image
