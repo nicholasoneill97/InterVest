@@ -68,7 +68,7 @@ export default function NavBar() {
                 <FaTimes />
               </button>
 
-              <h3 className="text-lg font-semibold mb-4">Your Trips</h3>
+              <h3 className="text-lg font-semibold mb-4 text-black">Your Trips</h3>
 
               {bundle.length === 0 ? (
                 <p className="text-gray-500 text-center">No trips added yet</p>
@@ -80,7 +80,7 @@ export default function NavBar() {
                       className="flex items-center justify-between gap-2 border-b pb-2"
                     >
                       <div>
-                        <p className="font-semibold">{t.title}</p>
+                        <p className="font-semibold text-black">{t.title}</p>
                         <p className="text-sm text-gray-500">
                           {t.travelers} travelers · {t.pricing.total}
                         </p>
