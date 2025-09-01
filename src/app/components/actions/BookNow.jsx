@@ -70,14 +70,14 @@ const BookNow = ({ trip, onClose, onBundle, onBook, people }) => {
 
         {/* Deal Tags */}
         {trip.bundleEligible === true && (
-          <div className="absolute top-0 right-0 border-b-2 border-l-2 bg-blue-600 text-sm rounded-bl-md text-white px-2 py-2 gap-2 flex items-center">
+          <div className="absolute top-0 right-0 bg-blue-600 text-sm rounded-bl-md text-white px-2 py-2 gap-2 flex items-center">
             <FaRegCheckSquare title="Eligible for bundle" className="text-lg" />
             Eligible For Bundling
           </div>
         )}
 
         {trip.familyPackage === true && (
-          <div className="absolute top-0 right-0 border-b-2 border-l-2 bg-blue-600 text-sm rounded-bl-md text-white px-2 py-2 gap-2 flex items-center">
+          <div className="absolute top-0 right-0 bg-blue-600 text-sm rounded-bl-md text-white px-2 py-2 gap-2 flex items-center">
             <MdFamilyRestroom
               title="Family Package Available"
               className="text-lg"
@@ -87,7 +87,7 @@ const BookNow = ({ trip, onClose, onBundle, onBook, people }) => {
         )}
 
         {trip.groupDiscounts === true && (
-          <div className="absolute top-0 right-0 border-b-2 border-l-2 bg-blue-600 text-sm rounded-bl-md text-white px-2 py-2 gap-2 flex items-center">
+          <div className="absolute top-0 right-0 bg-blue-600 text-sm rounded-bl-md text-white px-2 py-2 gap-2 flex items-center">
             <MdGroups title="Group Discount Available" className="text-lg" />
             Group Discounts
           </div>
