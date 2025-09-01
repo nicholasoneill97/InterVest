@@ -1,13 +1,10 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
-import Link from "next/link";
-import { motion } from "framer-motion";
-import dynamic from "next/dynamic";
-
-import NavBar from "../components/NavBar";
 import trips from "../components/data/trips";
-
+import Link from "next/link";
+import NavBar from "../components/NavBar";
+import { motion } from "framer-motion";
 import {
   FaCalendarAlt,
   FaDollarSign,
@@ -18,7 +15,7 @@ import {
   FaRegCheckSquare,
 } from "react-icons/fa";
 import { MdFamilyRestroom, MdGroups } from "react-icons/md";
-
+import dynamic from "next/dynamic";
 
 const BookNow = dynamic(() => import("../components/actions/BookNow"), {
   ssr: false,
@@ -407,6 +404,16 @@ const SearchPage = () => {
 };
 
 export default SearchPage;
+
+export const SearchPageWrapper = () => {
+  return (
+    <Suspense fallback={<p className="text-center mt-10">Loading trips...</p>}>
+      <SearchPage />
+    </Suspense>
+  );
+};
+
+
 
 
 
